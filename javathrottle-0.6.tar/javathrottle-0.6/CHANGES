@@ -1,0 +1,33 @@
+2004-03-03 0.6:
+	* Added beginning of window graph
+	* Added human readable byte counter
+	* Fixed an NPE that happens in the Swing thread
+
+2004-02-25 0.5:
+	* Fixed pause bug
+
+2004-02-02 0.4:
+	* Uses predictive algorithm to improve consistency
+	* Uses more efficient algorithm at high speeds
+	* Introduced split GUI
+
+2004-01-16 0.3:
+	* Changed from an input restricting algorithm to an output
+	  restricting algorithm.
+	* GUI responsiveness improved
+	* Application behaves better under many circumstances, but still
+	  not as well as is possible.
+	* User can change window
+
+2003-11-18:
+	* Improved window change algorithm.
+
+2003-11-06 0.2:
+	* Added command line switches and further fine tuning.
+	* Gui reports window data and a nicer format of rate.
+
+2003-11-05 0.1:
+	* Initial release.  Gui reports bytes, rate, buffer size and time;
+	allows the user to set the desired rate.
+
+
