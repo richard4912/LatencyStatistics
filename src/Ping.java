@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 public class Ping
 {
-    public static int getLatency( String address )
+    public static double getLatency( String address )
     {
         String time = "";
 
         // The command to execute
-        String pingCmd = "ping " + address;
+        String pingCmd = "ping " + address + " -n 1";
 
         // get the runtime to execute the command
         Runtime runtime = Runtime.getRuntime();
@@ -34,17 +34,26 @@ public class Ping
                 }
                 inputLine = in.readLine();
             }
-            time = time.substring( 5, time.length() - 3 );
-//            System.out.println( time );
+            time = time.substring( 5, time.length() - 9 );
+//             System.out.println( time );
         }
         catch ( Exception ex )
         {
             System.out.println( ex );
         }
-        return Integer.parseInt( time );
+
+        try
+        {
+            return Double.parseDouble( time );
+        }
+        catch ( Exception e )
+        {
+            return -1;
+        }
     }
-    
-    public static int getLatencies( String address, int numRuns )
+
+
+    public static double getLatencies( String address, int numRuns )
     {
         String time = "";
 
@@ -72,13 +81,13 @@ public class Ping
                 inputLine = in.readLine();
             }
             time = time.substring( 5, time.length() - 3 );
-//            System.out.println( time );
+            // System.out.println( time );
         }
         catch ( Exception ex )
         {
-            System.out.println( ex );
+//            System.out.println( ex );
         }
-        return Integer.parseInt( time );
+        return Double.parseDouble( time );
     }
 
 }
