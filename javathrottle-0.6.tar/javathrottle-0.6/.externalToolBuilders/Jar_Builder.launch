@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<launchConfiguration type="org.eclipse.ant.AntBuilderLaunchConfigurationType">
-    <stringAttribute
-        key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,"/>
-    <stringAttribute
-        key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc:/JavaThrottle}"/>
-    <stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/JavaThrottle/build.xml}"/>
-    <stringAttribute key="org.eclipse.debug.ui.target_run_perspective" value="perspective_none"/>
-</launchConfiguration>
