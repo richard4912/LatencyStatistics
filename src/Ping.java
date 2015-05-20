@@ -12,7 +12,7 @@ public class Ping
         String time = "";
 
         // The command to execute
-        String pingCmd = "ping " + address + " -n 1";
+        String pingCmd = "fping " + address + " -n 1";
 
         // get the runtime to execute the command
         Runtime runtime = Runtime.getRuntime();
@@ -35,7 +35,7 @@ public class Ping
                 inputLine = in.readLine();
             }
             time = time.substring( 5, time.length() - 9 );
-//             System.out.println( time );
+            // System.out.println( time );
         }
         catch ( Exception ex )
         {
@@ -85,7 +85,7 @@ public class Ping
         }
         catch ( Exception ex )
         {
-//            System.out.println( ex );
+            // System.out.println( ex );
         }
         return Double.parseDouble( time );
     }
